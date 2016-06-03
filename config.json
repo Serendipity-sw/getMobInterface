@@ -1,0 +1,8 @@
+{
+  "navdbuser": "root",
+  "navdbpassword": "Sw435464",
+  "navdbhost": "10.10.133.132",
+  "navdbport":3306,
+  "navdbname": "iportalV5",
+  "rootprefix":""
+}
