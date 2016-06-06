@@ -20,6 +20,8 @@ var (
 	debugFlag                                   = flag.Bool("d", false, "debug mode")
 	rt                                   *gin.Engine
 	rootPrefix                           string
+mobFilesPath string
+tableName string
 )
 
 func serverRun(cfn string, debug bool) {
@@ -27,6 +29,9 @@ func serverRun(cfn string, debug bool) {
 	logInit(debug)
 
 	rootPrefix = strings.TrimSpace(config.GetStringDefault("rootprefix", ""))
+	port := strings.TrimSpace(config.GetString("port"))
+	mobFilesPath = strings.TrimSpace(config.GetString("mobFilesPath"))
+	tableName = strings.TrimSpace(config.GetString("tableName"))
 
 	if len(rootPrefix) != 0 {
 		if !strings.HasPrefix(rootPrefix, "/") {

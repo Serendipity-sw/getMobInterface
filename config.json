@@ -1,8 +1,11 @@
 {
-  "navdbuser": "root",
-  "navdbpassword": "Sw435464",
-  "navdbhost": "10.10.133.132",
-  "navdbport":3306,
-  "navdbname": "iportalV5",
-  "rootprefix":""
+  "dbuser": "root",
+  "dbpass": "Sw435464",
+  "dbhost": "10.10.141.102",
+  "dbport":3306,
+  "dbname": "iactive",
+  "rootprefix":"",
+  "mobFilesPath":"./mobFiles",
+  "port":"8050",
+  "tableName":"act160602_zfb"
 }
