@@ -166,7 +166,7 @@ func fileLoad(filePath string) {
 }
 
 func createTableName() {
-	sql:=fmt.Sprintf("CREATE TABLE IF NOT EXISTS `%s` ( `Mob` varchar(11) UNSIGNED NOT NULL DEFAULT 0 index `index` (`Mob`)) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;",tableName)
+	sql:=fmt.Sprintf("CREATE TABLE IF NOT EXISTS `%s`  ( `Mob`  varchar(11) CHARACTER SET utf8 NOT NULL DEFAULT '' , INDEX `index` (`Mob`) ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;",tableName)
 	_,err:=sqlExec(sql)
 	if err != nil {
 		glog.Error("createTableName create table strut.tableName: %s err: %s \n",tableName,err.Error())
